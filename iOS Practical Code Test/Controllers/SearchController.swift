@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SearchController.swift
 //  iOS Practical Code Test
 //
 //  Created by Brett Cocking on 2018/10/20.
@@ -8,13 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
 }
-
