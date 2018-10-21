@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Localizable.stringsdict
+   iOS Practical Code Test
+
+   Created by Brett Cocking on 2018/10/21.
+   Copyright (c) 2018 Trademark Technology. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>NumberOfVotes</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@value@</string>
+            <key>value</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Vote</string>
+                <key>other</key>
+                <string>%d Votes</string>
+            </dict>
+        </dict>
+        <key>NumberOfAnswers</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@value@</string>
+            <key>value</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Answer</string>
+                <key>other</key>
+                <string>%d Answers</string>
+            </dict>
+        </dict>
+        <key>NumberOfViews</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@value@</string>
+            <key>value</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d View</string>
+                <key>other</key>
+                <string>%d Views</string>
+            </dict>
+        </dict>
+    </dict>
+</plist>

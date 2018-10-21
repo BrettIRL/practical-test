@@ -16,17 +16,12 @@
 		F4B1EC16217B50B6001DD5C3 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EC15217B50B6001DD5C3 /* Question.swift */; };
 		F4B1EC18217B51B9001DD5C3 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EC17217B51B9001DD5C3 /* Author.swift */; };
 		F4B1EC1A217B5296001DD5C3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EC19217B5296001DD5C3 /* ApiManager.swift */; };
+		F4B1EC2C217BC365001DD5C3 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EC2B217BC365001DD5C3 /* SearchTableViewCell.swift */; };
+		F4B1EC35217C807F001DD5C3 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F4B1EC34217C807F001DD5C3 /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F4B1EC01217B4E13001DD5C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4B1EBE4217B4E11001DD5C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4B1EBEB217B4E11001DD5C3;
-			remoteInfo = "iOS Practical Code Test";
-		};
-		F4B1EC24217BBC81001DD5C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4B1EBE4217B4E11001DD5C3 /* Project object */;
 			proxyType = 1;
@@ -49,7 +44,8 @@
 		F4B1EC15217B50B6001DD5C3 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F4B1EC17217B51B9001DD5C3 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		F4B1EC19217B5296001DD5C3 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
-		F4B1EC1F217BBC81001DD5C3 /* PracticalModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticalModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B1EC2B217BC365001DD5C3 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchTableViewCell.swift; path = "iOS Practical Code Test/Views/SearchTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		F4B1EC34217C807F001DD5C3 /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +57,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F4B1EBFD217B4E13001DD5C3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4B1EC1C217BBC81001DD5C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +80,6 @@
 			children = (
 				F4B1EBEC217B4E11001DD5C3 /* iOS Practical Code Test.app */,
 				F4B1EC00217B4E13001DD5C3 /* iOS Practical Code TestTests.xctest */,
-				F4B1EC1F217BBC81001DD5C3 /* PracticalModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,13 +88,13 @@
 			isa = PBXGroup;
 			children = (
 				F4B1EC14217B504C001DD5C3 /* Models */,
+				F4B1EC37217CB550001DD5C3 /* Views */,
 				F4B1EC13217B5040001DD5C3 /* Controllers */,
+				F4B1EC36217CB427001DD5C3 /* Helpers */,
 				F4B1EBEF217B4E11001DD5C3 /* AppDelegate.swift */,
-				F4B1EC11217B4F8A001DD5C3 /* Extensions.swift */,
 				F4B1EBF6217B4E13001DD5C3 /* Assets.xcassets */,
 				F4B1EBF8217B4E13001DD5C3 /* LaunchScreen.storyboard */,
 				F4B1EBFB217B4E13001DD5C3 /* Info.plist */,
-				F4B1EC19217B5296001DD5C3 /* ApiManager.swift */,
 			);
 			path = "iOS Practical Code Test";
 			sourceTree = "<group>";
@@ -135,6 +123,24 @@
 				F4B1EC17217B51B9001DD5C3 /* Author.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F4B1EC36217CB427001DD5C3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1EC19217B5296001DD5C3 /* ApiManager.swift */,
+				F4B1EC11217B4F8A001DD5C3 /* Extensions.swift */,
+				F4B1EC34217C807F001DD5C3 /* Localizable.stringsdict */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F4B1EC37217CB550001DD5C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4B1EC2B217BC365001DD5C3 /* SearchTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,24 +181,6 @@
 			productReference = F4B1EC00217B4E13001DD5C3 /* iOS Practical Code TestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F4B1EC1E217BBC81001DD5C3 /* PracticalModelTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F4B1EC26217BBC81001DD5C3 /* Build configuration list for PBXNativeTarget "PracticalModelTests" */;
-			buildPhases = (
-				F4B1EC1B217BBC81001DD5C3 /* Sources */,
-				F4B1EC1C217BBC81001DD5C3 /* Frameworks */,
-				F4B1EC1D217BBC81001DD5C3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F4B1EC25217BBC81001DD5C3 /* PBXTargetDependency */,
-			);
-			name = PracticalModelTests;
-			productName = PracticalModelTests;
-			productReference = F4B1EC1F217BBC81001DD5C3 /* PracticalModelTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,10 +195,6 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					F4B1EBFF217B4E13001DD5C3 = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = F4B1EBEB217B4E11001DD5C3;
-					};
-					F4B1EC1E217BBC81001DD5C3 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = F4B1EBEB217B4E11001DD5C3;
 					};
@@ -231,7 +215,6 @@
 			targets = (
 				F4B1EBEB217B4E11001DD5C3 /* iOS Practical Code Test */,
 				F4B1EBFF217B4E13001DD5C3 /* iOS Practical Code TestTests */,
-				F4B1EC1E217BBC81001DD5C3 /* PracticalModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,17 +226,11 @@
 			files = (
 				F4B1EBFA217B4E13001DD5C3 /* LaunchScreen.storyboard in Resources */,
 				F4B1EBF7217B4E13001DD5C3 /* Assets.xcassets in Resources */,
+				F4B1EC35217C807F001DD5C3 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F4B1EBFE217B4E13001DD5C3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4B1EC1D217BBC81001DD5C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,6 +250,7 @@
 				F4B1EC10217B4EC3001DD5C3 /* SearchController.swift in Sources */,
 				F4B1EC1A217B5296001DD5C3 /* ApiManager.swift in Sources */,
 				F4B1EC18217B51B9001DD5C3 /* Author.swift in Sources */,
+				F4B1EC2C217BC365001DD5C3 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +262,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4B1EC1B217BBC81001DD5C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,11 +269,6 @@
 			isa = PBXTargetDependency;
 			target = F4B1EBEB217B4E11001DD5C3 /* iOS Practical Code Test */;
 			targetProxy = F4B1EC01217B4E13001DD5C3 /* PBXContainerItemProxy */;
-		};
-		F4B1EC25217BBC81001DD5C3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F4B1EBEB217B4E11001DD5C3 /* iOS Practical Code Test */;
-			targetProxy = F4B1EC24217BBC81001DD5C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,46 +478,6 @@
 			};
 			name = Release;
 		};
-		F4B1EC27217BBC81001DD5C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94DP5E7357;
-				INFOPLIST_FILE = PracticalModelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tmtech.PracticalModelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Practical Code Test.app/iOS Practical Code Test";
-			};
-			name = Debug;
-		};
-		F4B1EC28217BBC81001DD5C3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 94DP5E7357;
-				INFOPLIST_FILE = PracticalModelTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tmtech.PracticalModelTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Practical Code Test.app/iOS Practical Code Test";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,15 +504,6 @@
 			buildConfigurations = (
 				F4B1EC0D217B4E13001DD5C3 /* Debug */,
 				F4B1EC0E217B4E13001DD5C3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F4B1EC26217BBC81001DD5C3 /* Build configuration list for PBXNativeTarget "PracticalModelTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F4B1EC27217BBC81001DD5C3 /* Debug */,
-				F4B1EC28217BBC81001DD5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
