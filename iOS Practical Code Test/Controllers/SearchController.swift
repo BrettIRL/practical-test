@@ -74,27 +74,16 @@ class SearchController: UITableViewController {
     }
     
     private func setupEmptyTableView() {
-        let tableBackgroundView = UIView()
-        tableBackgroundView.backgroundColor = UIColor().fromHexValue(hex: "#EDEDED")
-        tableView.backgroundView = tableBackgroundView
-        
-        tableBackgroundView.translatesAutoresizingMaskIntoConstraints = false
-        tableBackgroundView.centerXAnchor.constraint(equalTo: tableView.centerXAnchor).isActive = true
-        tableBackgroundView.centerYAnchor.constraint(equalTo: tableView.centerYAnchor).isActive = true
-        tableBackgroundView.widthAnchor.constraint(equalTo: tableView.widthAnchor).isActive = true
-        tableBackgroundView.heightAnchor.constraint(equalTo: tableView.heightAnchor).isActive = true
-        
         let emptyTableLabel = UILabel()
         emptyTableLabel.text = "Stack Overflow Search"
         emptyTableLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
         emptyTableLabel.textColor = UIColor().fromHexValue(hex: "#727272")
         emptyTableLabel.textAlignment = .center
-        tableBackgroundView.addSubview(emptyTableLabel)
-        
+        tableView.backgroundView = emptyTableLabel
+
         emptyTableLabel.translatesAutoresizingMaskIntoConstraints = false
-        emptyTableLabel.centerXAnchor.constraint(equalTo: tableBackgroundView.centerXAnchor).isActive = true
-        emptyTableLabel.centerYAnchor.constraint(equalTo: tableBackgroundView.centerYAnchor).isActive = true
-        emptyTableLabel.heightAnchor.constraint(equalToConstant: 21)
+        emptyTableLabel.centerXAnchor.constraint(equalTo: tableView.centerXAnchor).isActive = true
+        emptyTableLabel.centerYAnchor.constraint(equalTo: tableView.centerYAnchor).isActive = true
     }
 }
 
