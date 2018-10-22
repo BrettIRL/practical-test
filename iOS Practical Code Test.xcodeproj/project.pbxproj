@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F44ECD17217D250100DE50C6 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD16217D250100DE50C6 /* QuestionController.swift */; };
 		F4B1EBF0217B4E11001DD5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EBEF217B4E11001DD5C3 /* AppDelegate.swift */; };
 		F4B1EBF7217B4E13001DD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B1EBF6217B4E13001DD5C3 /* Assets.xcassets */; };
 		F4B1EBFA217B4E13001DD5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B1EBF8217B4E13001DD5C3 /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F44ECD16217D250100DE50C6 /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		F4B1EBEC217B4E11001DD5C3 /* iOS Practical Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Practical Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B1EBEF217B4E11001DD5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B1EBF6217B4E13001DD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		F4B1EC13217B5040001DD5C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F44ECD16217D250100DE50C6 /* QuestionController.swift */,
 				F4B1EC0F217B4EC3001DD5C3 /* SearchController.swift */,
 			);
 			path = Controllers;
@@ -251,6 +254,7 @@
 				F4B1EC1A217B5296001DD5C3 /* ApiManager.swift in Sources */,
 				F4B1EC18217B51B9001DD5C3 /* Author.swift in Sources */,
 				F4B1EC2C217BC365001DD5C3 /* SearchTableViewCell.swift in Sources */,
+				F44ECD17217D250100DE50C6 /* QuestionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

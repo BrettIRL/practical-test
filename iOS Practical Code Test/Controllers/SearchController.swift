@@ -131,6 +131,13 @@ extension SearchController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let questionController = QuestionController()
+        questionController.question = questions[indexPath.section]
+        
+        navigationController?.pushViewController(questionController, animated: true)
+    }
 }
 
 // MARK: - UISearchBarDelegate

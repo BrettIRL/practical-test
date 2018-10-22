@@ -67,6 +67,7 @@ class SearchTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         answeredImageWidthConstraint.constant = imageWidthConstant
+        addBorders()
     }
 
     
@@ -107,6 +108,12 @@ class SearchTableViewCell: UITableViewCell {
         viewsLabel.widthAnchor.constraint(greaterThanOrEqualToConstant: 56).isActive = true
         viewsLabel.topAnchor.constraint(equalTo: answersLabel.bottomAnchor, constant: 4).isActive = true
         viewsLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+    }
+    
+    func addBorders() {
+        let borderColor = UIColor().fromHexValue(hex: "#CCCCCC")
+        addBorder(side: .top, color: borderColor, thickness: 1.0)
+        addBorder(side: .bottom, color: borderColor, thickness: 1.0)
     }
 }
 

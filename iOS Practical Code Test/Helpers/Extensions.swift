@@ -50,3 +50,68 @@ extension String {
         return htmlToAttributedString?.string ?? ""
     }
 }
+
+extension UIView {
+    enum BorderSide {
+        case top
+        case bottom
+    }
+    
+    func addBorder(side: BorderSide, color: UIColor, thickness: CGFloat) {
+        let border = UIView()
+        
+        switch side {
+        case .top:
+            border.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: thickness)
+            border.autoresizingMask = .flexibleWidth
+        case .bottom:
+            border.frame = CGRect(x: 0, y: self.frame.height, width: self.frame.width, height: thickness)
+        }
+        
+        border.backgroundColor = color
+        self.addSubview(border)
+    }
+}
+
+extension UIImageView {
+    func loadImageFromUrlString(url urlString: String) {
+        if let url = URL(string: urlString) {
+            let task = URLSession.shared.dataTask(with: url) { data, reponse, error in
+                guard error == nil else { return }
+                
+                DispatchQueue.main.async {
+                    let image = UIImage(data: data!)
+                    self.image = image
+                }
+            }
+            task.resume()
+        }
+    }
+}
+
+extension Date {
+    func toOrdinalDateString() -> String {
+        let calendar = Calendar.current
+        let date = self
+        let dateComponents = calendar.component(.day, from: date)
+        let numberFormatter = NumberFormatter()
+        
+        numberFormatter.numberStyle = .ordinal
+        
+        let day = numberFormatter.string(from: dateComponents as NSNumber)
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = "MMMM yyyy"
+        let dateString = "\(day!) \(dateFormatter.string(from: date))"
+        
+        return dateString
+    }
+    
+    func toTimeString() -> String {
+        let date = self
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm"
+        
+        return dateFormatter.string(from: date)
+    }
+}
