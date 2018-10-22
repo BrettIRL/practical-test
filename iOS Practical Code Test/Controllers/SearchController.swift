@@ -85,6 +85,14 @@ class SearchController: UITableViewController {
         emptyTableLabel.centerXAnchor.constraint(equalTo: tableView.centerXAnchor).isActive = true
         emptyTableLabel.centerYAnchor.constraint(equalTo: tableView.centerYAnchor).isActive = true
     }
+    
+    private func showAlert(withTitle title: String, withMessage message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true) { [weak self] in
+            self?.setupEmptyTableView()
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate
@@ -150,10 +158,17 @@ extension SearchController: UISearchBarDelegate {
             searchBar.setShowsCancelButton(false, animated: true)
             
             APIManager.shared.getQuestions(tagged: searchString, numberOfResults: 20) { [weak self] (searchResults, error) in
-                guard error == nil else { return }
+                guard error == nil else {
+                    DispatchQueue.main.async {
+                        self?.showAlert(withTitle: "Error", withMessage: "There has been a problem retrieving questions for that tag")
+                    }
+                    return
+                }
+                
                 self?.questions = searchResults!.questions
                 DispatchQueue.main.async {
                     self?.loadingIndicator.stopAnimating()
+                    self?.setupEmptyTableView()
                     self?.tableView.reloadData()
                     self?.tableView.layoutIfNeeded()
                     self?.tableView.setContentOffset(.zero, animated: true)
