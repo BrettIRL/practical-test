@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F44ECD17217D250100DE50C6 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD16217D250100DE50C6 /* QuestionController.swift */; };
+		F44ECD1B217E012300DE50C6 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44ECD1A217E012300DE50C6 /* ExtensionTests.swift */; };
 		F4B1EBF0217B4E11001DD5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B1EBEF217B4E11001DD5C3 /* AppDelegate.swift */; };
 		F4B1EBF7217B4E13001DD5C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B1EBF6217B4E13001DD5C3 /* Assets.xcassets */; };
 		F4B1EBFA217B4E13001DD5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B1EBF8217B4E13001DD5C3 /* LaunchScreen.storyboard */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		F44ECD16217D250100DE50C6 /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
+		F44ECD1A217E012300DE50C6 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		F4B1EBEC217B4E11001DD5C3 /* iOS Practical Code Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Practical Code Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B1EBEF217B4E11001DD5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B1EBF6217B4E13001DD5C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B1EC04217B4E13001DD5C3 /* PracticalTestSessionTests.swift */,
+				F44ECD1A217E012300DE50C6 /* ExtensionTests.swift */,
 				F4B1EC06217B4E13001DD5C3 /* Info.plist */,
 			);
 			path = "iOS Practical Code TestTests";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B1EC05217B4E13001DD5C3 /* PracticalTestSessionTests.swift in Sources */,
+				F44ECD1B217E012300DE50C6 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
