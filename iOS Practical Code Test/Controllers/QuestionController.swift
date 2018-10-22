@@ -171,7 +171,7 @@ class QuestionController: UIViewController {
         tagLabel.trailingAnchor.constraint(equalTo: tagView.layoutMarginsGuide.trailingAnchor).isActive = true
         
         authorView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        authorView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        authorView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         authorView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         authorView.heightAnchor.constraint(equalToConstant: authorViewHeight).isActive = true
         
